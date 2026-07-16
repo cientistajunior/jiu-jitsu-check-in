@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cold-black);
+    color: var(--grey-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+main {
+    background-color: var(--raisin-black);
+    border-radius: .8rem;
+    padding: 3rem;
+    width: 100%;
+    max-width: 48rem;
+    box-shadow: 0 .8rem 2.4rem rgba(0,0,0,0.5);
+}
+
+.nameAthleteContainer {
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#nameAthleteInput,
+#selectedTypeBeltOption {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    background-color: var(--cold-black);
+    border: .2rem solid var(--very-dark-gray);
+    border-radius: .6rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
