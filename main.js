@@ -15,6 +15,17 @@ const colorBeltSelected = document.querySelector("#selectTypeBeltOption");
 const btnAddAthlete = document.querySelector(".btnAddAthlete");
 const listAthlete = document.querySelector(".listAthlete")
 
+btnAddAthlete.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const nameAthleteType = nameAthlete.value;
+    const colorBeltType = colorBeltSelected.value;
+    if(nameAthleteType === "" || colorBeltSelected === ""){
+        alert("Digite seu nome e escolha sua faixa!")
+        return
+    }
+});
+
 /**
  * @param {Array<Object>} list
  */
@@ -22,7 +33,7 @@ const renderAthlete = (list) => {
     listAthlete.innerHTML = "";
 
     list.forEach((athletesList) => {
-        listAthlete.innerHTML += `<li>${athletesList.id} - ${athletesList.belt} - ${athletesList.team}<button class="btnCheckout" data-id="${athletesList.id}"></buttton></li>`;
+        listAthlete.innerHTML += `<li>${athletesList.id} - ${athletesList.belt} - ${athletesList.team}<button class="btnCheckout" data-id="${athletesList.id}">Checkout</button></li>`;
     })
 };
 renderAthlete(athletes)
