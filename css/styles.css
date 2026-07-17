@@ -39,10 +39,73 @@ main {
     width: 100%;
     padding: 1.2rem 1.6rem;
     background-color: var(--cold-black);
-    border: .2rem solid var(--very-dark-gray);
+    border: 2px solid var(--very-dark-gray);
     border-radius: .6rem;
     color: var(--white);
     font-size: 1.6rem;
     outline: none;
     transition: border-color 0.2s;
+}
+
+#nameAthleteInput:focus,
+#selectedTypeBeltOption:focus {
+    border-color: var(--light-green)
+}
+
+.btnAddAthlete {
+    width: 100%;
+    padding: 1.4rem;
+    background-color: var(--dark-green);
+    color: var(--white);
+    border: none;
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-bottom: 3rem;
+}
+
+.btnAddAthlete:hover {
+    background-color: var(--light-green);
+}
+
+.btnAddAthlete:active {
+    transform: scale(0.98);
+}
+
+.listAthlete {
+    list-style: none;
+    border-top: 1px solid var(--very-dark-grey);
+    padding-top: 2rem;
+    max-height: 30rem;
+    overflow-y: auto;
+}
+
+.listAthlete li {
+    background-color: var(--very-dark-grey);
+    padding: 1.2rem 1.6rem;
+    border-radius: .6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    border-left: 4px solid var(--dark-purple)
+}
+
+.btnCheckout {
+    background-color: var(--salmon);
+    color: var(--white);
+    border: none;
+    padding: .6rem 1.2rem;
+    border-radius: .4rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btnCheckout:hover {
+    background-color: var(--dark-red);
 }
