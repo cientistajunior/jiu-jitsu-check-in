@@ -45,7 +45,7 @@ const renderAthlete = (list) => {
     listAthlete.innerHTML = "";
 
     list.forEach((athletesList) => {
-        listAthlete.innerHTML += `<li>${athletesList.id} - ${athletesList.belt} - <button class="btnCheckout" data-id="${athletesList.id}">Checkout</button></li>`;
+        listAthlete.innerHTML += `<li>${athletesList.id} - ${athletesList.name}- ${athletesList.belt} - <button class="btnCheckout" data-id="${athletesList.id}">Checkout</button></li>`;
     })
 
 };
